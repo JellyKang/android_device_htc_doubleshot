@@ -41,7 +41,8 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/htc/doubleshot/prebuilt/kernel
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
-	device/htc/doubleshot/prebuilt/bcmdhd.ko:system/lib/modules/bcmdhd.ko
+	device/htc/doubleshot/prebuilt/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
+	device/htc/doubleshot/prebuilt/ntfs.ko:system/lib/modules/ntfs.ko
 endif
 
 ## The gps config appropriate for this device
