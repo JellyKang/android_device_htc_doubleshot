@@ -37,6 +37,12 @@ PRODUCT_PACKAGES += \
     CMFileManagerThemes \
     Torch
 
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+LOCAL_KERNEL := device/htc/doubleshot/prebuilt/kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel \
+	device/htc/doubleshot/prebuilt/bcmdhd.ko:system/lib/modules/bcmdhd.ko
+endif
 
 ## The gps config appropriate for this device
 PRODUCT_COPY_FILES += device/common/gps/gps.conf_US:system/etc/gps.conf

@@ -41,8 +41,8 @@ BOARD_KERNEL_CMDLINE := no_console_suspend=1
 # Kernel [Build]
 TARGET_KERNEL_CONFIG := doubleshot_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/doubleshot
-BUILD_KERNEL := true
-
+BUILD_KERNEL := false
+TARGET_PREBUILT_KERNEL := true
 # Boot animation
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
