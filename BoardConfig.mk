@@ -40,7 +40,7 @@ BOARD_KERNEL_CMDLINE := no_console_suspend=1
 
 # Kernel [Build]
 TARGET_PREBUILT_KERNEL := true
-ifeq ($(TARGET_PREBUILT_KERNEL),)
+ifneq ($(TARGET_PREBUILT_KERNEL),)
 TARGET_KERNEL_CONFIG := doubleshot_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/doubleshot
 BUILD_KERNEL := true
