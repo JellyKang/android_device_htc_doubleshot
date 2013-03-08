@@ -39,7 +39,7 @@ BOARD_KERNEL_PAGE_SIZE := 2048
 BOARD_KERNEL_CMDLINE := no_console_suspend=1
 
 # Kernel [Build]
-TARGET_PREBUILT_KERNEL := false
+TARGET_PREBUILT_KERNEL := true
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 TARGET_KERNEL_CONFIG := doubleshot_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/doubleshot
