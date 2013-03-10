@@ -52,7 +52,7 @@ TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
 #Hardware
-BOARD_USES_LEGACY_QCOM := true
+#BOARD_USES_LEGACY_QCOM := true
 
 # Bluetooth/Wifi
 -include device/htc/msm8660-common/bcmdhd.mk
