@@ -43,6 +43,7 @@ TARGET_PREBUILT_KERNEL := false
 ifneq ($(TARGET_PREBUILT_KERNEL),)
 TARGET_KERNEL_CONFIG := doubleshot_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/doubleshot
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro
 BUILD_KERNEL := true
 endif
 
@@ -53,8 +54,8 @@ TARGET_SCREEN_WIDTH := 480
 #Hardware
 BOARD_USES_LEGACY_QCOM := true
 
-#Camera
-
+# Bluetooth/Wifi
+-include device/htc/msm8660-common/bcmdhd.mk
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := doubleshot
@@ -64,7 +65,8 @@ WIFI_DRIVER_MODULE_NAME          := bcmdhd
 WIFI_DRIVER_MODULE_PATH          := "/system/lib/modules/bcmdhd.ko"
 
 # RIL
-BOARD_USE_NEW_LIBRIL_HTC := true
+#BOARD_USE_NEW_LIBRIL_HTC := true
+BOARD_USES_LEGACY_RIL := true
 
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
