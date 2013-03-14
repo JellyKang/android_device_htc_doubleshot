@@ -4,6 +4,9 @@
 
 ro.sf.lcd_density=240
 
+# JellyKang
+ro.kang.version=Version-1
+
 # radio
 mobiledata.interfaces=rmnet0
 rild.libpath=/system/lib/libhtc_ril.so
@@ -14,9 +17,12 @@ ro.ril.enable.sdr=1
 ro.ril.enable.amr.wideband=0
 
 # improve scrolling
+windowsmgr.max_events_per_sec=150
 ro.max.fling_velocity=12000
 ro.min.fling_velocity=8000
 view.scroll_friction=0
+
+service.adb.root=1
 
 # Modify MMS APN retry timer from 5s to 2s.
 ro.gsm.2nd_data_retry_config=max_retries=3, 2000, 2000, 2000
