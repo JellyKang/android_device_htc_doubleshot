@@ -5,7 +5,7 @@
 ro.sf.lcd_density=240
 
 # JellyKang
-ro.kang.version=Version-1
+ro.kang.version=V1-Doubleshot
 
 # radio
 mobiledata.interfaces=rmnet0
