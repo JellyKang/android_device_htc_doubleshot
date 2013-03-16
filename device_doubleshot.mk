@@ -138,6 +138,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     dalvik.vm.dexopt-flags=m=y
 
+# JellyKang
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.kang.version=V2-Doubleshot-$(shell date +%Y%m%d-%T) \
+    ro.goo.developerid=xmcwildchild22 \
+    ro.goo.board=doubleshot \
+    ro.goo.version=$(shell date +%Y%m%d-%H%M%S)
+    ro.goo.rom=JellyKang-JB4.2-Doubleshot 
+
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/doubleshot/doubleshot-vendor.mk)
 
