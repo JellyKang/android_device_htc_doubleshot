@@ -36,7 +36,8 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     CMFileManagerThemes \
     Torch \
-    LiquidPapers
+    LiquidPapers \
+    SwagPapers
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/htc/doubleshot/prebuilt/kernel
@@ -140,11 +141,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # JellyKang
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.kang.version=V2-Doubleshot-$(shell date +%Y%m%d-%T) \
+    ro.kang.version=V1.1-Doubleshot-$(shell date +%Y%m%d-%T) \
     ro.goo.developerid=xmcwildchild22 \
     ro.goo.board=doubleshot \
-    ro.goo.version=$(shell date +%Y%m%d-%H%M%S)
+    ro.goo.version=110
     ro.goo.rom=JellyKang-JB4.2-Doubleshot 
+
+PRODUCT_PACKAGES += \
+    LiquidPapers \
+    SwagPapers
 
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/doubleshot/doubleshot-vendor.mk)
