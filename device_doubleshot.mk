@@ -35,7 +35,8 @@ PRODUCT_PACKAGES += \
     Apollo \
     CMFileManager \
     CMFileManagerThemes \
-    Torch
+    Torch \
+    LiquidPapers
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/htc/doubleshot/prebuilt/kernel
