@@ -20,6 +20,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # common msm8660 configs
 $(call inherit-product, device/htc/msm8660-common/msm8660.mk)
 
+$(call inherit-product, device/htc/doubleshot/kang.mk)
+
 DEVICE_PACKAGE_OVERLAYS += device/htc/doubleshot/overlay
 
 # GPS and Light
@@ -138,18 +140,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     ro.com.google.locationfeatures=1 \
     dalvik.vm.dexopt-flags=m=y
-
-# JellyKang
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.kang.version=V1.1-Doubleshot-$(shell date +%y%m%d) \
-    ro.goo.developerid=xmcwildchild22 \
-    ro.goo.board=doubleshot \
-    ro.goo.version=$(shell date +%y%m%d) \
-    ro.goo.rom=JellyKang-JB4.2-Doubleshot 
-
-PRODUCT_PACKAGES += \
-    LiquidPapers \
-    SwagPapers
 
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/htc/doubleshot/doubleshot-vendor.mk)
