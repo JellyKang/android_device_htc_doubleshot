@@ -47,12 +47,12 @@ TARGET_KERNEL_SOURCE := kernel/htc/doubleshot
 BUILD_KERNEL := true
 endif
 
+#Hardware
+BOARD_USES_LEGACY_QCOM := true
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
-
-#Hardware
-#BOARD_USES_LEGACY_QCOM := true
 
 # Bluetooth/Wifi
 -include device/htc/msm8660-common/bcmdhd.mk
@@ -66,8 +66,7 @@ WIFI_DRIVER_MODULE_NAME          := bcmdhd
 WIFI_DRIVER_MODULE_PATH          := "/system/lib/modules/bcmdhd.ko"
 
 # RIL
-#BOARD_USE_NEW_LIBRIL_HTC := true
-BOARD_USES_LEGACY_RIL := true
+BOARD_USE_NEW_LIBRIL_HTC := true
 
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
