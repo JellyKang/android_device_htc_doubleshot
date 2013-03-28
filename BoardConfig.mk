@@ -66,7 +66,8 @@ WIFI_DRIVER_MODULE_NAME          := bcmdhd
 WIFI_DRIVER_MODULE_PATH          := "/system/lib/modules/bcmdhd.ko"
 
 # RIL
-BOARD_USE_NEW_LIBRIL_HTC := true
+#BOARD_USE_NEW_LIBRIL_HTC := true
+BOARD_USES_LEGACY_RIL := true
 
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
