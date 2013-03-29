@@ -9,6 +9,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     LiquidPapers \
     SwagPapers \
+    BamPapers \
+    ParanoidWallpapers \
     PerformanceControl
 
 PRODUCT_COPY_FILES += device/htc/doubleshot/prebuilt/GooManager.apk:system/app/GooManager.apk
