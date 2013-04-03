@@ -10,7 +10,7 @@ PRODUCT_PACKAGES += \
     LiquidPapers \
     SwagPapers \
     BamPapers \
-    Wallpapers \ #carbon wallpapers
+    Wallpapers \
     ParanoidWallpapers \
     PerformanceControl
 
