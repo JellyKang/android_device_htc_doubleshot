@@ -15,3 +15,6 @@ PRODUCT_PACKAGES += \
     PerformanceControl
 
 PRODUCT_COPY_FILES += device/htc/doubleshot/prebuilt/GooManager.apk:system/app/GooManager.apk
+
+# Boot animation
+TARGET_BOOTANIMATION_NAME := 480

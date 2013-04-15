@@ -50,10 +50,6 @@ endif
 #Hardware
 BOARD_USES_LEGACY_QCOM := true
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_WIDTH := 480
-
 # Bluetooth/Wifi
 -include device/htc/msm8660-common/bcmdhd.mk
 
