@@ -43,6 +43,7 @@ TARGET_PREBUILT_KERNEL := false
 ifneq ($(TARGET_PREBUILT_KERNEL),)
 TARGET_KERNEL_CONFIG := doubleshot_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/doubleshot
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := codefirex-arm-eabi-4.7
 #TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro
 BUILD_KERNEL := true
 endif
