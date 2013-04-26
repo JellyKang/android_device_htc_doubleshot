@@ -11,8 +11,7 @@ PRODUCT_PACKAGES += \
     SwagPapers \
     BamPapers \
     Wallpapers \
-    ParanoidWallpapers \
-    PerformanceControl
+    ParanoidWallpapers
 
 PRODUCT_COPY_FILES += device/htc/doubleshot/prebuilt/GooManager.apk:system/app/GooManager.apk
 
