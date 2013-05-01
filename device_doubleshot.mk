@@ -20,7 +20,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # common msm8660 configs
 $(call inherit-product, device/htc/msm8660-common/msm8660.mk)
 
-$(call inherit-product, device/htc/doubleshot/kang.mk)
+# JellyKang if available
+$(call inherit-product-if-exists, vendor/kang/kang.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/doubleshot/overlay
 
