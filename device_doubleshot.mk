@@ -22,6 +22,7 @@ $(call inherit-product, device/htc/msm8660-common/msm8660.mk)
 
 # JellyKang if available
 $(call inherit-product-if-exists, vendor/kang/kang.mk)
+KANG_BOOTANIMATION := true
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/doubleshot/overlay
 
