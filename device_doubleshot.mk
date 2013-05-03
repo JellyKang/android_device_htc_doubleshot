@@ -20,17 +20,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # common msm8660 configs
 $(call inherit-product, device/htc/msm8660-common/msm8660.mk)
 
-# JellyKang if available
-$(call inherit-product-if-exists, vendor/kang/kang.mk)
-KANG_BOOTANIMATION := true
-
-# Device naming
--PRODUCT_DEVICE := doubleshot
--PRODUCT_NAME := kang_doubleshot
--PRODUCT_BRAND := htc
--PRODUCT_MODEL := MyTouch 4G Slide
--PRODUCT_MANUFACTURER := HTC
-
 DEVICE_PACKAGE_OVERLAYS += device/htc/doubleshot/overlay
 
 # GPS and Light
