@@ -29,9 +29,6 @@ PRODUCT_BRAND := htc
 PRODUCT_MODEL := MyTouch 4G Slide
 PRODUCT_MANUFACTURER := HTC
 
-# JellyKang if available
-$(call inherit-product-if-exists, vendor/kang/kang.mk)
-
 # GPS and Light
 PRODUCT_PACKAGES += \
     gps.doubleshot \

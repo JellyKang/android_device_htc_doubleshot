@@ -1,6 +1,9 @@
 # Specify phone tech before including full_phone
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
+# JellyKang if available
+$(call inherit-product-if-exists, vendor/kang/kang.mk)
+
 # Release name
 PRODUCT_RELEASE_NAME := doubleshot
 
