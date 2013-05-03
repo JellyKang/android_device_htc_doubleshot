@@ -7,15 +7,15 @@ PRODUCT_RELEASE_NAME := doubleshot
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
+# Inherit device configuration
+$(call inherit-product, device/htc/doubleshot/device_doubleshot.mk)
+
 # Device naming
 PRODUCT_DEVICE := doubleshot
-PRODUCT_NAME := kang_doubleshot
+PRODUCT_NAME := cm_doubleshot
 PRODUCT_BRAND := htc
 PRODUCT_MODEL := MyTouch 4G Slide
 PRODUCT_MANUFACTURER := HTC
-
-# Inherit device configuration
-$(call inherit-product, device/htc/doubleshot/device_doubleshot.mk)
 
 # JellyKang if available
 $(call inherit-product-if-exists, vendor/kang/kang.mk)
