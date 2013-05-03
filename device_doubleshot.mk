@@ -22,6 +22,16 @@ $(call inherit-product, device/htc/msm8660-common/msm8660.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/doubleshot/overlay
 
+# Device naming
+PRODUCT_DEVICE := doubleshot
+PRODUCT_NAME := cm_doubleshot
+PRODUCT_BRAND := htc
+PRODUCT_MODEL := MyTouch 4G Slide
+PRODUCT_MANUFACTURER := HTC
+
+# JellyKang if available
+$(call inherit-product-if-exists, vendor/kang/kang.mk)
+
 # GPS and Light
 PRODUCT_PACKAGES += \
     gps.doubleshot \
