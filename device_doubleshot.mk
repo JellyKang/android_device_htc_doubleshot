@@ -14,6 +14,25 @@
 # limitations under the License.
 #
 
+# ######### BEGIN cm.mk #########
+
+# JellyKang if available
+$(call inherit-product-if-exists, vendor/kang/kang.mk)
+
+# Specify phone tech before including full_phone
+$(call inherit-product, vendor/slim/config/gsm.mk)
+
+# Release name
+PRODUCT_RELEASE_NAME := doubleshot
+
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+
+# Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_doubleshot BUILD_FINGERPRINT=tmous/htc_doubleshot/doubleshot:4.0.3/IML74K/356011.14:user/release-keys PRIVATE_BUILD_DESC="3.32.531.14 CL356011 release-keys" BUILD_NUMBER=356011
+
+# ######### END cm.mk #########
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
