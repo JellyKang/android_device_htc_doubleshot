@@ -44,6 +44,7 @@ ifneq ($(TARGET_PREBUILT_KERNEL),)
 TARGET_KERNEL_CONFIG := doubleshot_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/doubleshot
 #TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-linaro-4.8
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro/bin/arm-linux-gnueabihf-
 #TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro
 BUILD_KERNEL := true
 endif
