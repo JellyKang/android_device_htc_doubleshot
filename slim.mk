@@ -1,20 +1,21 @@
+# JellyKang if available
+$(call inherit-product-if-exists, vendor/kang/kang.mk)
+
 # Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/slim/config/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := doubleshot
 
-TARGET_BOOTANIMATION_NAME := 480
-
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common SLIM stuff.
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/doubleshot/device_doubleshot.mk)
 
 # Device naming
 PRODUCT_DEVICE := doubleshot
-PRODUCT_NAME := cm_doubleshot
+PRODUCT_NAME := slim_doubleshot
 PRODUCT_BRAND := htc
 PRODUCT_MODEL := MyTouch 4G Slide
 PRODUCT_MANUFACTURER := HTC
